@@ -1,0 +1,12 @@
+h1 {
+  color: red;
+  font-family: "Dancing Script", cursive;
+  font-weight: lighter;
+}
+
+p {
+  background-color: aquamarine;
+  color: black;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+}
