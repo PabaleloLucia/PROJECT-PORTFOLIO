@@ -1,15 +1,101 @@
+:root {
+  --text-color: #ffffff;
+  --main-color: 1B1B1B;
+  --secondary-color: aquamarine;
+  --spacing-l: 48px;
+  --spacing-s: 12px;
+  --spacing-m: 36px;
+  --heading-font: "Dancing Script", cursive;
+  --overall-font: "Roboto", sans-serif;
+  --background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/083/265/original/image.png?1685100859");
+  --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 576px) {
+  h1 {
+    font-size: 32px;
+    text-align: center;
+  }
+
+  p {
+    text-align: center;
+  }
+  .img-fluid {
+    display: none;
+  }
+}
+
+body {
+  color: var(--text-color);
+}
+
+.project-link {
+  display: block;
+  text-align: center;
+  margin: 0 20px;
+}
+
 h1 {
-  color: red;
-  font-family: "Dancing Script", cursive;
-  font-weight: lighter;
+  font-family: var(--heading-font);
+  color: black;
+  background-image: none;
+  font-weight: bold;
+  -webkit-text-fill-color: inherit;
+  font-size: 50px;
+  line-height: 50px;
+  color: var(--text-color);
+  text-align: center;
+  margin: 0;
 }
 
 p {
-  background-color: aquamarine;
-  color: black;
-  font-family: "Poppins", sans-serif;
+  margin-top: var(--spacing-m);
+  font-size: 1.4em;
+  font-family: var(--overall-font);
+  display: block;
+  margin: 0 0 1.5rem;
+  line-height: 1.5;
+  text-align: center;
   font-weight: bold;
 }
-.fa-github {
-  font-size: 50px;
+.container {
+  margin: 0;
+  padding-top: 145px;
+  display: block;
+}
+.primary-link {
+  border-radius: 4px;
+  padding: 15px 40px;
+  text-decoration: none;
+  text-transform: capitalize;
+  background: var(--secondary-color);
+  box-shadow: var(--box-shadow);
+  color: black;
+  margin-left: 250px;
+}
+
+.hero {
+  position: relative;
+
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: var(--background-image);
+  background-size: cover;
+  opacity: 0.75;
+}
+.heroine {
+  padding: 145px 20px;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
 }
