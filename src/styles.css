@@ -27,6 +27,7 @@
 
 body {
   color: var(--text-color);
+  background-color: rgb(88, 88, 88);
 }
 
 .project-link {
@@ -35,7 +36,8 @@ body {
   margin: 0 20px;
 }
 
-h1 {
+h1,
+h2 {
   font-family: var(--heading-font);
   color: black;
   background-image: none;
@@ -98,4 +100,13 @@ p {
   bottom: 0px;
   right: 0px;
   left: 0px;
+}
+.description {
+  font-weight: 40px;
+}
+.intro {
+  color: aquamarine;
+}
+.git-link {
+  color: aquamarine;
 }
