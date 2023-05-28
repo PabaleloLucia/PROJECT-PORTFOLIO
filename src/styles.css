@@ -23,6 +23,9 @@
   .img-fluid {
     display: none;
   }
+  .btn-branding {
+    display: block;
+  }
 }
 
 body {
@@ -61,6 +64,10 @@ p {
   text-align: center;
   font-weight: bold;
 }
+a {
+  text-decoration: none;
+}
+
 .pictures {
   padding: 10px 5px;
 }
@@ -69,21 +76,29 @@ p {
   padding-top: 145px;
   display: block;
 }
-.primary-link {
+.btn-branding {
   border-radius: 4px;
-  padding: 15px 40px;
+  padding: 15px 30px;
   text-decoration: none;
-  text-transform: capitalize;
-  background: var(--secondary-color);
+  font-weight: bold;
+  background-color: var(--secondary-color);
   box-shadow: var(--box-shadow);
   color: black;
-  margin-left: 250px;
+
+  text-transform: capitalize;
+}
+
+#myBtn:hover {
+  background-color: rgb(14, 83, 211);
+  color: white;
+
+  cursor: pointer;
 }
 
 .hero {
   position: relative;
 
-  height: 100vh;
+  height: 130vh;
   width: 100%;
   display: flex;
   align-items: center;
@@ -91,9 +106,6 @@ p {
   background-image: var(--background-image);
   background-size: cover;
   opacity: 0.75;
-}
-.heroine {
-  padding: 145px 20px;
 }
 
 .hero::before {
@@ -113,4 +125,8 @@ p {
 }
 .git-link {
   color: aquamarine;
+}
+.git-link:hover {
+  color: var(--text-color);
+  text-decoration: underline;
 }
