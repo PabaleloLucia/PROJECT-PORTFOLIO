@@ -130,3 +130,11 @@ a {
   color: var(--text-color);
   text-decoration: underline;
 }
+
+.netlify-link {
+  color: aquamarine;
+}
+.netlify-link:hover {
+  color: var(--text-color);
+  text-decoration: underline;
+}
