@@ -66,8 +66,12 @@ p {
 }
 a {
   text-decoration: none;
+  color: aquamarine;
 }
-
+a:hover {
+  color: var(--text-color);
+  text-decoration: underline;
+}
 .pictures {
   padding: 10px 5px;
 }
@@ -123,18 +127,52 @@ a {
 .intro {
   color: aquamarine;
 }
-.git-link {
-  color: aquamarine;
-}
-.git-link:hover {
-  color: var(--text-color);
-  text-decoration: underline;
+.know-me {
+  background: -webkit-linear-gradient(#eee, #58ced6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-.netlify-link {
-  color: aquamarine;
+.box {
+  --border-size: 4px;
+  --border-angle: 0turn;
+  width: 51vmin;
+  height: 55vmin;
+  background-image: conic-gradient(
+      from var(--border-angle),
+      #213,
+      #112 50%,
+      #213
+    ),
+    conic-gradient(from var(--border-angle), transparent 20%, #08f, #f03);
+  background-size: calc(100% - (var(--border-size) * 2))
+      calc(100% - (var(--border-size) * 2)),
+    cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  -webkit-animation: bg-spin 3s linear infinite;
+  animation: bg-spin 3s linear infinite;
 }
-.netlify-link:hover {
-  color: var(--text-color);
-  text-decoration: underline;
+
+@-webkit-keyframes bg-spin {
+  to {
+    --border-angle: 1turn;
+  }
+}
+
+@keyframes bg-spin {
+  to {
+    --border-angle: 1turn;
+  }
+}
+
+.box:hover {
+  -webkit-animation-play-state: paused;
+  animation-play-state: paused;
+}
+
+@property --border-angle {
+  syntax: "<angle>";
+  inherits: true;
+  initial-value: 0turn;
 }
