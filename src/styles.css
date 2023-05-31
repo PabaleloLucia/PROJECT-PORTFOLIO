@@ -64,6 +64,29 @@ p {
   text-align: center;
   font-weight: bold;
 }
+
+ul {
+  margin-top: var(--spacing-m);
+  font-size: 1.4em;
+  font-family: var(--overall-font);
+
+  margin: 0 0 1.5rem;
+  line-height: 1.5;
+  text-align: left;
+  font-weight: bold;
+  text-decoration: none;
+}
+hr {
+  background-color: aquamarine;
+  border: 0;
+  margin: 50px auto;
+  width: 50%;
+  height: 5px;
+  border-radius: 5px;
+  max-width: 700px;
+  clear: both;
+}
+
 a {
   text-decoration: none;
   color: aquamarine;
@@ -121,13 +144,34 @@ a:hover {
   right: 0px;
   left: 0px;
 }
+
+.wrapper {
+  position: relative;
+
+  height: 90vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper::before {
+  content: "";
+  position: absolute;
+
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+}
+
 .description {
   font-weight: 40px;
 }
 .intro {
   color: aquamarine;
 }
-.know-me {
+.subject {
   background: -webkit-linear-gradient(#eee, #58ced6);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
