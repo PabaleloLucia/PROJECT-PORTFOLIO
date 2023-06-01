@@ -11,8 +11,9 @@
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 
-@media (max-width: 576px) {
-  h1 {
+@media (max-width: 768px) {
+  h1,
+  h2 {
     font-size: 32px;
     text-align: center;
   }
@@ -20,10 +21,17 @@
   p {
     text-align: center;
   }
-  .img-fluid {
+  .woman-art {
     display: none;
   }
   .btn-branding {
+    display: block;
+  }
+
+  .box {
+    display: none;
+  }
+  .myself {
     display: block;
   }
 }
@@ -52,6 +60,12 @@ h2 {
   color: var(--text-color);
   text-align: center;
   margin: 0;
+}
+
+h1 {
+  background: -webkit-linear-gradient(#eee, #58ced6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 p {
@@ -86,6 +100,30 @@ hr {
   max-width: 700px;
   clear: both;
 }
+.socials {
+  text-decoration: none;
+  color: aquamarine;
+}
+
+.socials:hover {
+  color: var(--text-color);
+  text-decoration: underline;
+}
+
+small {
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  display: inline-flex;
+  padding-left: 152px;
+  gap: 30px;
+
+  position: absolute;
+  width: 102px;
+  height: 18px;
+  left: 800px;
+  top: 475px;
+}
 
 a {
   text-decoration: none;
@@ -94,6 +132,10 @@ a {
 a:hover {
   color: var(--text-color);
   text-decoration: underline;
+}
+
+.content {
+  color: #f65282;
 }
 .pictures {
   padding: 10px 5px;
@@ -171,8 +213,9 @@ a:hover {
 .intro {
   color: aquamarine;
 }
+
 .subject {
-  background: -webkit-linear-gradient(#eee, #58ced6);
+  background: -webkit-linear-gradient(#eee, #f65282);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
