@@ -140,8 +140,11 @@ a:hover {
 .pictures {
   padding: 10px 5px;
 }
+.pictures h3 {
+  color: #f65282;
+  text-align: center;
+}
 .container {
-  margin: 0;
   padding-top: 145px;
   display: block;
 }
