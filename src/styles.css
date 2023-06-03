@@ -266,3 +266,43 @@ a:hover {
   inherits: true;
   initial-value: 0turn;
 }
+
+.hawaii,
+.weather,
+.nails {
+  border: #08f;
+  border-radius: 50px;
+  box-shadow: var(--box-shadow);
+}
+
+.rating {
+  width: 308px;
+  height: 40px;
+  margin: 0 auto;
+  padding: 40px 50px 40px;
+  gap: 20px;
+}
+.rating label {
+  float: right;
+  position: relative;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+.rating label:not(:first-of-type) {
+  padding-right: 2px;
+}
+.rating label:before {
+  content: "\2605";
+  font-size: 42px;
+  color: #ccc;
+  line-height: 1;
+}
+.rating input {
+  display: none;
+}
+.rating input:checked ~ label:before,
+.rating:not(:checked) > label:hover:before,
+.rating:not(:checked) > label:hover ~ label:before {
+  color: #f9df4a;
+}

@@ -29,7 +29,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Roboto:wght@300&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Roboto+Slab:wght@500&display=swap&family=Roboto:wght@300&display=swap"
       rel="stylesheet"
     />
     <link
@@ -44,7 +44,8 @@
     <title>Homepage</title>
   </head>
   <body>
-    <h1 class="text-center project">Projects</h1>
+    <h1 class="text-center project pb-2">Projects</h1>
+
     <p class="text-center m-5 description">
       Below are projects I have done, a project about beauty and how users can
       find more information about acrylic nails, another one about weather
@@ -58,17 +59,18 @@
           <img
             src="images/travel.png"
             alt="Travel to Hawaii"
-            class="img-fluid"
+            class="img-fluid hawaii"
           />
         </div>
 
         <div class="col-sm-6">
           <h3 class="fs-2">Dream Travel App</h3>
-          <p>
-            There was a shecodes competition about travel dream destination and
-            I participated to showcase my dream travel destination being Hawaii.
-            The landscaps of Hawaii and its advantures. Truly my dream travel
-            destination is heaven but I chose to do an earth destination.
+          <p class="pt-3">
+            I got my inspiration for this project from the shecodes competition
+            about travel dream destination and took part to showcase my dream
+            travel destination being Hawaii. The landscaps of Hawaii, its
+            advantures and fun activities one can try out if they visit the
+            place.
           </p>
         </div>
       </div>
@@ -76,11 +78,12 @@
         <div class="col-sm-6">
           <h3 class="fs-2">Weather App</h3>
 
-          <p>
-            There was a shecodes competition about travel dream destination and
-            I participated to showcase my dream travel destination being Hawaii.
-            The landscaps of Hawaii and its advantures. Truly my dream travel
-            destination is heaven but I chose to do an earth destination.
+          <p class="pt-3">
+            I made a weather application which allow users to search for a
+            desired city and get its temperature. It shows the forecast for the
+            next 6 days and also displays the time,humidity, wind and
+            description of the weather, lastly it contains a theme button which
+            enable users to switch to dark mode desirebly.
           </p>
         </div>
 
@@ -88,24 +91,43 @@
           <img
             src="images/pabalelo-weather.png"
             alt="Weather App"
-            class="img-fluid"
+            class="img-fluid weather"
           />
         </div>
       </div>
       <div class="row">
         <div class="col-sm-6">
-          <img src="images/beauty.png" alt="Menicure" class="img-fluid" />
+          <img src="images/beauty.png" alt="Menicure" class="img-fluid nails" />
         </div>
         <div class="col-sm-6">
           <h3 class="fs-2">Beauty App</h3>
-          <p>
-            There was a shecodes competition about travel dream destination and
-            I participated to showcase my dream travel destination being Hawaii.
-            The landscaps of Hawaii and its advantures. Truly my dream travel
-            destination is heaven but I chose to do an earth destination.
+          <p class="pt-3">
+            The beauty website is informative about acrylic nails/ menicure ,
+            tools and products needed, it has a link for users who desire to
+            know more about the product and lastly , a make appointment button
+            for appointment booking(s).
           </p>
         </div>
       </div>
     </div>
+
+    <div class="rating">
+      <input type="radio" id="star5" name="rating" value="5" /><label
+        for="star5"
+      ></label>
+      <input type="radio" id="star4" name="rating" value="4" /><label
+        for="star4"
+      ></label>
+      <input type="radio" id="star3" name="rating" value="3" /><label
+        for="star3"
+      ></label>
+      <input type="radio" id="star2" name="rating" value="2" /><label
+        for="star2"
+      ></label>
+      <input type="radio" id="star1" name="rating" value="1" /><label
+        for="star1"
+      ></label>
+    </div>
+    <hr />
   </body>
 </html>
