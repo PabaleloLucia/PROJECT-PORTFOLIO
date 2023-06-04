@@ -45,8 +45,10 @@
 
 body {
   color: var(--text-color);
-  background-color: rgb(88, 88, 88);
+  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/084/419/original/341250-Sunset-Starry-Night-Sky-Moon-Stars-Anime-Scenery.jpg?1685897766");
   padding: 30px 20px;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .project-link {
@@ -107,15 +109,6 @@ hr {
   max-width: 700px;
   clear: both;
 }
-.socials {
-  text-decoration: none;
-  color: aquamarine;
-}
-
-.socials:hover {
-  color: var(--text-color);
-  text-decoration: underline;
-}
 
 small {
   flex-direction: row;
@@ -138,6 +131,7 @@ a {
 }
 a:hover {
   color: var(--text-color);
+  text-decoration: none;
 }
 
 .content {
@@ -146,7 +140,8 @@ a:hover {
 .pictures {
   padding: 10px 5px;
 }
-.pictures h3 {
+.pictures h3,
+.contact-details {
   color: #f65282;
   text-align: center;
 }
@@ -169,7 +164,7 @@ a:hover {
 #myBtn:hover {
   background-color: rgb(14, 83, 211);
   color: white;
-
+  border-radius: 4px;
   cursor: pointer;
 }
 
@@ -375,11 +370,9 @@ footer a {
   fill: #999999;
 }
 
-div .footer-socials {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  align-items: center;
+div .footer-socials,
+#social-links {
+  margin: 0 50px;
 }
 
 footer span {
