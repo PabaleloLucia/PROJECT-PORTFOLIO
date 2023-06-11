@@ -14,6 +14,7 @@
 @media (max-width: 360px) {
   body {
     display: block;
+    overflow: hidden;
   }
   .myBtn {
     display: block;
@@ -47,6 +48,7 @@
 @media (max-width: 768px) {
   body {
     justify-content: center;
+    overflow: hidden;
   }
   nav ul {
     font-size: 10px;
@@ -110,7 +112,6 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   max-width: 100%;
-  overflow: hidden;
 }
 
 .project-link {
