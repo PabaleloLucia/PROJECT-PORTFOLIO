@@ -11,11 +11,51 @@
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 360px) {
   body {
-    padding: 10px 40px;
+    display: block;
+  }
+  .myBtn {
+    display: block;
+    padding: 0;
+    margin: 0;
   }
 
+  h1,
+  h2 {
+    font-size: 5px;
+    margin-bottom: 5px;
+  }
+
+  p {
+    justify-content: left;
+  }
+  .hero {
+    height: 1vmin;
+  }
+  marquee {
+    display: none;
+  }
+}
+
+@media (max-width: 2559px) {
+  marquee {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    justify-content: center;
+  }
+  nav ul {
+    font-size: 10px;
+    margin: 0;
+  }
+  .wrapper {
+    height: 100vmin;
+    padding-top: 0;
+  }
   h1,
   h2 {
     font-size: 32px;
@@ -25,21 +65,17 @@
   p {
     text-align: center;
   }
-  .woman-art {
-    display: none;
-  }
-
+  .woman-art,
   .box {
     display: none;
   }
+
   .myself {
     display: block;
   }
 
-  .skills i {
-    font-size: 6px;
-  }
-  .skills p {
+  .skills i,
+  p {
     font-size: 6px;
   }
 
@@ -50,21 +86,31 @@
   .editing-skills p {
     font-size: 14px;
   }
-}
+  .myBtn {
+    margin: 0 24%;
+  }
+  marquee {
+    display: none;
+  }
 
-@media (max-width: 768px) {
-  nav ul {
-    font-size: 10px;
-    margin: 0;
+  .first-column {
+    flex: 0 0 auto;
+    width: 97%;
+  }
+  .subject {
+    flex: 0 0 auto;
+    width: 97%;
   }
 }
 
 body {
   color: var(--text-color);
-  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/084/419/original/341250-Sunset-Starry-Night-Sky-Moon-Stars-Anime-Scenery.jpg?1685897766");
-  padding: 30px 20px;
+  background-image: url("/images/sky-414199_1280.jpg");
+  padding: 0 20px;
   background-repeat: no-repeat;
   background-size: cover;
+  max-width: 100%;
+  overflow: hidden;
 }
 
 .project-link {
@@ -75,7 +121,7 @@ body {
 .woman-art {
   align-items: left;
   padding: 0 20px;
-  height: 700px;
+  height: 500px;
 }
 
 h1,
@@ -99,6 +145,7 @@ p {
   font-family: var(--overall-font);
   display: block;
   margin: 0 0 1.5rem;
+
   text-align: center;
   font-weight: normal;
   line-height: 1.7;
@@ -109,7 +156,6 @@ ul {
   font-size: 1.4em;
   font-family: var(--overall-font);
 
-  margin: 0 0 1.5rem;
   line-height: 1.7;
   text-align: left;
   font-weight: normal;
@@ -153,7 +199,7 @@ a:hover {
   color: #ffffff;
   font-size: 18px;
   line-height: 27px;
-  margin: 0 40%;
+  margin: 0 36%;
   padding: 5px 10px;
 }
 
@@ -169,9 +215,9 @@ a:hover {
 }
 
 .hero {
-  height: 130vh;
+  height: 166vmin;
   width: 100%;
-
+  box-shadow: 0 7px 13px rgba(0, 0, 0, 0.4);
   background-image: var(--background-image);
   background-size: cover;
 }
@@ -179,7 +225,7 @@ a:hover {
 .wrapper {
   position: relative;
 
-  height: 90vh;
+  height: 77vmin;
   width: 100%;
   display: flex;
   align-items: center;
@@ -327,6 +373,20 @@ nav li.active a {
   color: black;
 }
 
+marquee {
+  padding-top: 90px;
+  font-size: 90px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+
+  margin-top: 120px;
+
+  color: #ffffcc;
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px rgb(0, 119, 128),
+    0 0 30px rgb(0, 119, 128), 0 0 40px rgb(0, 119, 128),
+    0 0 55px rgb(0, 119, 128), 0 0 70px rgb(0, 119, 128);
+}
+
 footer {
   font-size: 16px;
   max-width: 100%;
@@ -376,4 +436,8 @@ footer span {
 
 .speciality p {
   font-size: 14px;
+}
+
+#my-section {
+  font-size: 30px;
 }
