@@ -1,5 +1,5 @@
 :root {
-  --text-color: #ffffff;
+  --text-color: black;
   --main-color: 1B1B1B;
   --secondary-color: aquamarine;
   --spacing-l: 48px;
@@ -34,12 +34,14 @@
   .hero {
     height: 1vmin;
   }
-  marquee {
-    display: none;
-  }
 }
 
-@media (max-width: 2559px) {
+@media (max-width: 522px) {
+  marquee {
+    font-size: 8px;
+  }
+}
+@media (max-width: 510px) {
   marquee {
     display: none;
   }
@@ -48,7 +50,7 @@
 @media (max-width: 768px) {
   body {
     justify-content: center;
-    overflow: hidden;
+    overflow: auto;
   }
   nav ul {
     font-size: 10px;
@@ -90,9 +92,6 @@
   }
   .myBtn {
     margin: 0 24%;
-  }
-  marquee {
-    display: none;
   }
 
   .first-column {
@@ -223,6 +222,10 @@ a:hover {
   background-size: cover;
 }
 
+.hero p {
+  color: #ccc;
+}
+
 .wrapper {
   position: relative;
 
@@ -294,7 +297,7 @@ a:hover {
 .weather,
 .nails {
   border: #08f;
-  border-radius: 50px;
+  border-radius: 20px;
   box-shadow: var(--box-shadow);
 }
 
@@ -408,7 +411,7 @@ footer a {
 }
 
 div .footer-socials {
-  margin: 0 50px;
+  margin: 0 10px;
 }
 
 footer span {
@@ -431,7 +434,7 @@ footer span {
 }
 .speciality i {
   color: var(--secondary-color);
-  font-size: 30px;
+  font-size: 25px;
   text-align: center;
 }
 
