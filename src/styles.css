@@ -195,11 +195,11 @@ a:hover {
   text-decoration: none;
 }
 .myBtn {
-  border-radius: 4px;
+  border-radius: 6px;
   color: #ffffff;
   font-size: 18px;
-  line-height: 27px;
-  margin: 0 36%;
+  line-height: 17px;
+  margin: 0 27%;
   padding: 5px 10px;
 }
 
